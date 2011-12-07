@@ -37,12 +37,19 @@
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <Compile Include="AnalyticsService.cs" />
+    <Compile Include="AnalyticsTrackerService.cs" />
+    <Compile Include="Model\TrackerRequest.cs" />
+    <Compile Include="Model\TrackerRequestType.cs" />
+    <Compile Include="Model\TrackerResult.cs" />
+    <Compile Include="Model\TrackerEvent.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\RestSharp\RestSharp.MonoTouch\RestSharp.MonoTouch.csproj">
       <Project>{E9A9D1C5-4E06-4D31-9809-A97188C70B2C}</Project>
       <Name>RestSharp.MonoTouch</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Model\" />
   </ItemGroup>
 </Project>
